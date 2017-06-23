@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<work.pengzhe.com.animationlistview.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mystyle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <work.pengzhe.com.animationlistview.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="淘宝618造物节"
+            android:textColor="#ffff00"
+            android:textSize="26sp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromBottom"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffee00"
+            android:gravity="center"
+            android:text="买买买！剁手党的节日！"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            mystyle:alpha="0.3"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="200dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromBottom|fromRight"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingRight="200dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromRight"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromLeft"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromRight"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromLeft"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            mystyle:translateFrom="fromRight"/>
+
+    </work.pengzhe.com.animationlistview.MyLinearLayout>
+
+</work.pengzhe.com.animationlistview.MyScrollView>
