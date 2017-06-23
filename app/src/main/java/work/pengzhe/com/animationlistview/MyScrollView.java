@@ -43,13 +43,16 @@ public class MyScrollView extends ScrollView {
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
-        View firstView = mContentView.getChildAt(0);
-        Log.i("pengzhe", "firstView: " + firstView.getClass().getSimpleName());
-        Log.i("pengzhe", "firstView.getLayoutParams().height: " + firstView.getLayoutParams().height);
+        int scrollHeight = getHeight();
+        for (int i = 0; i < getChildCount(); i++) {
+            View childView = getChildAt(i);
+            int absHeight = childView.getTop() - t;
+            if (absHeight <= scrollHeight) {
 
+            } else {
 
-        
-
+            }
+        }
     }
 
 
