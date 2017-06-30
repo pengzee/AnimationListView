@@ -48,7 +48,9 @@ public class MyScrollView extends ScrollView {
             View childView = getChildAt(i);
             int absHeight = childView.getTop() - t;
             if (absHeight <= scrollHeight) {
-
+                if (childView instanceof MyFrameLayout) {
+                   
+                }
             } else {
 
             }
